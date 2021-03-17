@@ -15,19 +15,29 @@
         android:textColor="@color/black"
         android:textStyle="bold" />
 
+
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:id="@+id/article_subheading"
+        android:layout_width="match_parent"
+        android:autoLink="web"
+        android:layout_height="wrap_content"
         android:layout_below="@id/article_heading"
         android:text="@string/article_subtitle"
         android:textAppearance="@android:style/TextAppearance.DeviceDefault" />
 
-    <TextView
+    <ScrollView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/article"
-        android:layout_below="@id/article_subheading"
-        android:text="@string/article_text" />
+        android:layout_below="@id/article_subheading">
+
+
+        <TextView
+            android:id="@+id/article"
+            android:layout_width="wrap_content"
+            android:autoLink="web"
+            android:layout_height="wrap_content"
+            android:text="@string/article_text" />
+
+    </ScrollView>
 
 </RelativeLayout>
