@@ -5,14 +5,14 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
     <TextView
         android:id="@+id/article_heading"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/design_default_color_primary"
         android:text="@string/article_title"
         android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
-        android:textColor="@color/black"
+        android:textColor="@android:color/white"
         android:textStyle="bold" />
 
 
@@ -31,8 +31,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/article_subtitle"
-                android:textAppearance=
-                    "@android:style/TextAppearance.DeviceDefault" />
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault" />
 
             <TextView
                 android:id="@+id/article"
@@ -40,8 +39,14 @@
                 android:layout_height="wrap_content"
                 android:autoLink="web"
                 android:text="@string/article_text" />
+
+            <Button
+                android:id="@+id/add_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Comment"
+                android:textColor="@android:color/white" />
+
         </LinearLayout>
-
     </ScrollView>
-
 </RelativeLayout>
